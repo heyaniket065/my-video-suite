@@ -844,7 +844,7 @@ export default function HomeApp() {
 
   return (
     <AppShell>
-      <main className="mx-auto w-full max-w-5xl px-4 pb-20 pt-10 sm:px-8 md:pt-[12vh]">
+      <main className="mx-auto w-full max-w-7xl px-4 pb-20 pt-8 sm:px-8 lg:px-12">
         {billingSummary?.cancel_at && billingSummary.subscription_provider === "stripe" && (
           <SubscriptionCancelBanner
             cancelAt={billingSummary.cancel_at}
@@ -854,11 +854,11 @@ export default function HomeApp() {
         )}
         {upgradeState?.needsPayment && <PaymentFailedBanner className="mb-8" />}
 
-        <div className="mx-auto max-w-3xl animate-rise">
-          <h1 className="text-center font-display text-3xl font-bold tracking-tight sm:text-[2.6rem] sm:leading-tight">
+        <div className="mx-auto max-w-5xl animate-rise">
+          <h1 className="font-display text-3xl font-bold tracking-tight sm:text-[2.6rem] sm:leading-tight">
             {greetingText(t, session.user.name)}
           </h1>
-          <p className="mt-2 text-center text-muted-foreground">
+          <p className="mt-2 max-w-2xl text-muted-foreground">
             {t(`subtitleByWorkflow.${activeWorkflow}`)}
           </p>
 
@@ -1365,7 +1365,7 @@ export default function HomeApp() {
           </p>
         </div>
 
-        <section className="mt-16 md:mt-24" aria-labelledby="recent-heading">
+        <section className="mt-12" aria-labelledby="recent-heading">
           <div className="mb-4 flex items-end justify-between">
             <h2 id="recent-heading" className="font-display text-lg font-bold tracking-tight">{t("recent")}</h2>
             {recent && recent.length > 0 && (
