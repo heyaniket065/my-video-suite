@@ -6,7 +6,7 @@ Add a line here when a pull request changes something a user can see. Use **New*
 
 ## 2026-11-15
 
-- **Improved:** The creator workspace uses a wider, left-aligned layout that gives the video composer and recent generations more room. ([PR](https://github.com/heyaniket065/my-video-suite/compare/main...feat/supoclip-dashboard-ui?expand=1))
+- **Improved:** The creator workspace uses a wider, left-aligned layout that gives the video composer and recent generations more room. ([#1](https://github.com/heyaniket065/my-video-suite/pull/1))
 
 ## 2026-11-08
 
